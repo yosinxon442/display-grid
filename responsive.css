@@ -1,0 +1,37 @@
+@media (max-width: 1000px) {
+    .grid{
+
+        grid-template-columns: 1fr 2fr 1fr 1fr;
+        grid-template-rows: 100px 2fr 1fr 1fr 1fr 100px;
+
+        grid-template-areas: 
+        "header header header header"
+        "hero hero hero hero"
+        "menu main main main"
+        "menu main main main"
+        "menu banner banner banner"
+        "menu extra extra image"
+        ;
+    }
+}
+
+@media (max-width: 750px) {
+    .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 3fr 3fr 2fr 2fr 2fr;
+
+        grid-template-areas: 
+        "header"
+        "hero"
+        "menu"
+        "main"
+        "image"
+        "extra"
+        "banner"
+        ;
+    }
+
+    .grid div{
+        padding: 22px 10px;
+    }
+}
